@@ -26,13 +26,13 @@ function win(userChoice, computerChoice) {
     userScore++;
     userScore_span.textContent = userScore;
     computerScore.textContent = computerScore;
-    result_p.textContent = `${convertToWord(userChoice)} beats ${convertToWord(computerChoice)}. You win 🔥"`;
+    result_p.textContent = `${convertToWord(userChoice)} beats ${convertToWord(computerChoice)}. You win 🔥`;
     userChoice_div.classList.add('green-glow');
     setTimeout(() => userChoice_div.classList.remove('green-glow') , 300)
     if (userScore === 5 && computerScore <= 4){
         result_p.textContent = 'CONGRATULATIONS YOU WIN A GAME';
         userScore_span.textContent = 0;
-        computerScore.textContent = 0;
+        computerScore_span.textContent = 0;
         userScore = 0;
         computerScore = 0;
     } 
@@ -45,13 +45,13 @@ function lose(userChoice,computerChoice) {
     computerScore++;
     userScore_span.textContent = userScore;
     computerScore_span.textContent = computerScore;
-    result_p.textContent = `${convertToWord(userChoice)} loses to ${convertToWord(computerChoice)}. You lose 😞"`;
+    result_p.textContent = `${convertToWord(userChoice)} loses to ${convertToWord(computerChoice)}. You lose 😞`;
     userChoice_div.classList.add('red-glow');
     setTimeout( () => userChoice_div.classList.remove('red-glow'), 300)
     if (computerScore === 5 && userScore <= 4){
         result_p.textContent = 'YOU LOSE A GAME';
         userScore_span.textContent = 0;
-        computerScore.textContent = 0;
+        computerScore_span.textContent = 0;
         userScore = 0;
         computerScore = 0;
     }
@@ -59,7 +59,7 @@ function lose(userChoice,computerChoice) {
 
 function draw(userChoice, computerChoice){
     const userChoice_div = document.getElementById(userChoice)
-    result_p.textContent = `${convertToWord(userChoice)} equal to ${convertToWord(computerChoice)}. It's draw"`;
+    result_p.textContent = `${convertToWord(userChoice)} equal to ${convertToWord(computerChoice)}. It's draw `;
     userChoice_div.classList.add('gray-glow');
     setTimeout( () => userChoice_div.classList.remove('gray-glow') , 300)
 }
