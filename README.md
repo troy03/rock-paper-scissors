@@ -28,8 +28,8 @@ Users should be able to implement a game that will against to Computer
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL:(https://github.com/troy03/rock-paper-scissors)
+- Live Site URL:(https://troy03.github.io/rock-paper-scissors/)
 
 ### Built with
 
