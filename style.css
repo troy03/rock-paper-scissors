@@ -6,17 +6,16 @@
 }
 
 body {
-    background-color: #292C34;
+    background: url(./assets/wallpaper.jpg)
 
 }
 
 header {
-    background: white;
     padding: 20px;
 }
 
 header > h1 {
-    color:#24272E;
+    color:white;
     text-align: center;
     font-family: Asap, Helvetica, sans-serif;
 }
